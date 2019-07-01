@@ -1,0 +1,23 @@
+index:
+  path: /
+  controller: App\Controller\HomeController::index
+
+register:
+  path: /register
+  controller: App\Controller\UserController::register
+login:
+  path: /login
+  controller: App\Controller\SecurityController::login
+
+edit:
+  path: /user/api/edit
+  controller: App\Controller\SecurityController::edit
+show:
+  path: /user/api/show
+  controller: App\Controller\UserApiController::show
+delete:
+  path: user/api/delete
+  controller: App\Controller\UserApiController::delete
+create:
+  path: user/api/create
+  controller: App\Controller\UserApiController::create

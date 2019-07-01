@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}HomeController!{% endblock %}
+
+{% block body %}
+    {% if login %}
+        <h1>Cześć {{ login }}! ✅</h1>
+        <a href="{{ path('logout') }}">Wyloguj się</a>
+    {% endif %}
+{% endblock %}
